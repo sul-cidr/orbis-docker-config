@@ -20,8 +20,7 @@ services:
     container_name: orbis_app
     image: orbis_app
     build:
-      context: .
-      dockerfile: orbis_app.Dockerfile
+      context: orbis_app
     volumes:
       - webroot:/var/www/html
     depends_on:
