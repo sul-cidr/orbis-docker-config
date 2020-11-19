@@ -9,7 +9,7 @@ RUN apt-get update -qq \
 
 
 COPY lib /opt/lib/
-COPY orbis_db.final.pg_dump /opt/
+COPY orbis_db.final.pg_dump /var/local
 
 COPY orbis_db.init.sh /docker-entrypoint-initdb.d/
 RUN chmod +x /docker-entrypoint-initdb.d/orbis_db.init.sh

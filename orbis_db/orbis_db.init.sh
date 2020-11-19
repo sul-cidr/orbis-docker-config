@@ -12,5 +12,5 @@ then
 
   cp /opt/lib/pgrouting/librouting* /usr/lib/postgresql/9.1/lib/;
 
-  su --login postgres --command "pg_restore --dbname orbis -Fc /opt/orbis_db.final.pg_dump" || true;
+  su --login postgres --command "pg_restore --dbname orbis -Fc /var/local/orbis_db.final.pg_dump" || true;
 fi;
