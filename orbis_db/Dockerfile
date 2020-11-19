@@ -8,7 +8,7 @@ RUN apt-get update -qq \
  && rm -rf /var/lib/apt/lists/*
 
 
-COPY lib /opt/lib/
+COPY lib/pgrouting /usr/lib/postgresql/9.1/lib/
 COPY orbis_db.final.pg_dump /var/local
 
 COPY orbis_db.init.sh /docker-entrypoint-initdb.d/
