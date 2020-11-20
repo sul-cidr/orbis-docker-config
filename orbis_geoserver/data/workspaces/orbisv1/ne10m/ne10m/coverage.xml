@@ -1,0 +1,95 @@
+<coverage>
+  <id>CoverageInfoImpl--78eb7b80:152231fdd7b:-30d6</id>
+  <name>ne10m</name>
+  <nativeName>ne10m</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-55fa9cb8:14b69748b1c:-7ff0</id>
+  </namespace>
+  <title>ne10m</title>
+  <description>Generated from WorldImage</description>
+  <keywords>
+    <string>WCS</string>
+    <string>WorldImage</string>
+    <string>ne10m</string>
+  </keywords>
+  <nativeCRS class="org.geotools.referencing.crs.DefaultEngineeringCRS$Cartesian">LOCAL_CS[&quot;Generic cartesian 2D&quot;, 
+  LOCAL_DATUM[&quot;Unknow&quot;, 0], 
+  UNIT[&quot;m&quot;, 1.0], 
+  AXIS[&quot;x&quot;, EAST], 
+  AXIS[&quot;y&quot;, NORTH]]</nativeCRS>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>-180.00000000005002</minx>
+    <maxx>180.00000071994998</maxx>
+    <miny>-90.00000035995001</miny>
+    <maxy>90.00000000005</maxy>
+    <crs class="org.geotools.referencing.crs.DefaultEngineeringCRS$Cartesian">LOCAL_CS[&quot;Generic cartesian 2D&quot;, 
+  LOCAL_DATUM[&quot;Unknow&quot;, 0], 
+  UNIT[&quot;m&quot;, 1.0], 
+  AXIS[&quot;x&quot;, EAST], 
+  AXIS[&quot;y&quot;, NORTH]]</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-180.00000000005002</minx>
+    <maxx>180.00000071994998</maxx>
+    <miny>-90.00000035995001</miny>
+    <maxy>90.00000000005</maxy>
+    <crs>GEOGCS[&quot;WGS84(DD)&quot;, 
+  DATUM[&quot;WGS84&quot;, 
+    SPHEROID[&quot;WGS84&quot;, 6378137.0, 298.257223563]], 
+  PRIMEM[&quot;Greenwich&quot;, 0.0], 
+  UNIT[&quot;degree&quot;, 0.017453292519943295], 
+  AXIS[&quot;Geodetic longitude&quot;, EAST], 
+  AXIS[&quot;Geodetic latitude&quot;, NORTH]]</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+    <entry key="dirName">ne10m_ne10m</entry>
+  </metadata>
+  <store class="coverageStore">
+    <id>CoverageStoreInfoImpl--78eb7b80:152231fdd7b:-30d8</id>
+  </store>
+  <nativeFormat>WorldImage</nativeFormat>
+  <grid dimension="2">
+    <range>
+      <low>0 0</low>
+      <high>21600 10800</high>
+    </range>
+    <transform>
+      <scaleX>0.0166666667</scaleX>
+      <scaleY>-0.0166666667</scaleY>
+      <shearX>0.0</shearX>
+      <shearY>0.0</shearY>
+      <translateX>-179.9916666667</translateX>
+      <translateY>89.9916666667</translateY>
+    </transform>
+    <crs>EPSG:4326</crs>
+  </grid>
+  <supportedFormats>
+    <string>GIF</string>
+    <string>PNG</string>
+    <string>JPEG</string>
+    <string>TIFF</string>
+    <string>GEOTIFF</string>
+  </supportedFormats>
+  <interpolationMethods>
+    <string>bilinear</string>
+    <string>bicubic</string>
+  </interpolationMethods>
+  <dimensions>
+    <coverageDimension>
+      <name>RED_BAND</name>
+      <description>GridSampleDimension[-Infinity,Infinity]</description>
+    </coverageDimension>
+    <coverageDimension>
+      <name>GREEN_BAND</name>
+      <description>GridSampleDimension[-Infinity,Infinity]</description>
+    </coverageDimension>
+    <coverageDimension>
+      <name>BLUE_BAND</name>
+      <description>GridSampleDimension[-Infinity,Infinity]</description>
+    </coverageDimension>
+  </dimensions>
+</coverage>

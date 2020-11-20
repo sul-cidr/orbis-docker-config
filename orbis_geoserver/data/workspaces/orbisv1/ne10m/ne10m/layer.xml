@@ -1,0 +1,16 @@
+<layer>
+  <name>ne10m</name>
+  <id>LayerInfoImpl--78eb7b80:152231fdd7b:-30d5</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--78eb7b80:152231fdd7b:-30d7</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--78eb7b80:152231fdd7b:-30d6</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

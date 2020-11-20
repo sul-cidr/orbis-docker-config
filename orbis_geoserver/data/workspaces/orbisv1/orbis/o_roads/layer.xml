@@ -1,0 +1,16 @@
+<layer>
+  <name>o_roads</name>
+  <id>LayerInfoImpl-55fa9cb8:14b69748b1c:-7fdc</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--4c584a71:137a60fd2c7:-7ccb</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-55fa9cb8:14b69748b1c:-7fdd</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

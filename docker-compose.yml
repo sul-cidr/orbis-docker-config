@@ -16,6 +16,25 @@ services:
         max-file: "10"
         compress: "true"
 
+  orbis_geoserver:
+    container_name: orbis_geoserver
+    image: orbis_geoserver
+    build:
+      context: orbis_geoserver
+    depends_on:
+      - orbis_db
+    environment:
+      DBHOST: orbis_db
+    expose:
+      - 8080
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "10"
+        compress: "true"
+
   orbis_app:
     container_name: orbis_app
     image: orbis_app
