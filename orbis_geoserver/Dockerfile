@@ -30,6 +30,6 @@ COPY data/styles /usr/local/tomcat/webapps/geoserver/data/styles
 
 # Set CATALINA_OPTS
 ENV CATALINA_OPTS "-server -Djava.awt.headless=true \
-	-Xms768m -Xmx1560m -XX:+UseConcMarkSweepGC -XX:NewSize=48m -DGEOSERVER_CONSOLE_DISABLED=true"
+	-Xms768m -Xmx1560m -XX:+UseConcMarkSweepGC -XX:NewSize=48m"
 
 ENTRYPOINT ["/usr/local/tomcat/bin/catalina.sh", "run"]
