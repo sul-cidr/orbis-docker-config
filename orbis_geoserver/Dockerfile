@@ -11,18 +11,20 @@ RUN apt-get update -qq \
  && apt-get install -yq ttf-mscorefonts-installer \
  && rm -rf /var/lib/apt/lists/*
 
-# Install the GeoServer WAR
+# Install the GeoServer WAR and prune unneeded files
 RUN cd /tmp \
  && wget http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/geoserver-${GEOSERVER_VERSION}-war.zip \
  && unzip geoserver-${GEOSERVER_VERSION}-war.zip -d /usr/local/tomcat/webapps/ geoserver.war \
- && rm -rf geoserver-${GEOSERVER_VERSION}-war.zip
-
-RUN cd /usr/local/tomcat/webapps/ \
+ && rm -rf geoserver-${GEOSERVER_VERSION}-war.zip \
+ && cd /usr/local/tomcat/webapps/ \
  && unzip geoserver.war -d geoserver \
- && rm /usr/local/tomcat/webapps/geoserver.war
-
-RUN cd /usr/local/tomcat/webapps/geoserver/data \
- && rm -rf coverages demo workspaces data styles
+ && rm geoserver.war \
+ && cd geoserver/data/ \
+ && rm -rf coverages \
+ && rm -rf demo \
+ && rm -rf workspaces \
+ && rm -rf data \
+ && rm -rf styles
 
 COPY data/workspaces /usr/local/tomcat/webapps/geoserver/data/workspaces
 COPY data/data /usr/local/tomcat/webapps/geoserver/data/data
