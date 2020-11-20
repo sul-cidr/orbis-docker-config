@@ -1,0 +1,30 @@
+<dataStore>
+  <id>DataStoreInfoImpl-55fa9cb8:14b69748b1c:-7fe0</id>
+  <name>orbis</name>
+  <description>pg</description>
+  <type>PostGIS</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-55fa9cb8:14b69748b1c:-7ff1</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="Connection timeout">20</entry>
+    <entry key="port">5432</entry>
+    <entry key="dbtype">postgis</entry>
+    <entry key="host">orbis_db</entry>
+    <entry key="validate connections">true</entry>
+    <entry key="max connections">10</entry>
+    <entry key="database">orbis</entry>
+    <entry key="namespace">orbisv1</entry>
+    <entry key="schema">public</entry>
+    <entry key="Loose bbox">true</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="fetch size">1000</entry>
+    <entry key="Max open prepared statements">50</entry>
+    <entry key="preparedStatements">false</entry>
+    <entry key="Estimated extends">true</entry>
+    <entry key="user">karlg</entry>
+    <entry key="min connections">1</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>
