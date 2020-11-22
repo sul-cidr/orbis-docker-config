@@ -6,9 +6,10 @@ EXPOSE 8080/tcp
 ENV GEOSERVER_VERSION 2.1.4
 
 # Install the Microsoft truetype fonts
+# Install netcat (so we can check whether postgres is up before launching)
 RUN echo "deb http://httpredir.debian.org/debian jessie contrib" >> /etc/apt/sources.list
 RUN apt-get update -qq \
- && apt-get install -yq ttf-mscorefonts-installer \
+ && apt-get install -yq ttf-mscorefonts-installer netcat \
  && rm -rf /var/lib/apt/lists/*
 
 # Install the GeoServer WAR and prune unneeded files
