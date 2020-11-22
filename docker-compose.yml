@@ -34,6 +34,15 @@ services:
         max-size: "10m"
         max-file: "10"
         compress: "true"
+    command: >
+      /bin/sh -c "
+        while ! nc -z orbis_db 5432;
+        do
+          echo 'Waiting for postgres...';
+          sleep 5;
+        done;
+        /usr/local/tomcat/bin/catalina.sh run;
+      "
 
   orbis_app:
     container_name: orbis_app
