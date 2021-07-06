@@ -31,6 +31,9 @@ COPY data/workspaces /usr/local/tomcat/webapps/geoserver/data/workspaces
 COPY data/data /usr/local/tomcat/webapps/geoserver/data/data
 COPY data/styles /usr/local/tomcat/webapps/geoserver/data/styles
 
+# Uncompress the NE data
+RUN cd /usr/local/tomcat/webapps/geoserver/data/data/nedata && cat ne10m.tiff.bz2_* | bunzip2 -c > ne10m.tiff
+
 # Set CATALINA_OPTS
 ENV CATALINA_OPTS "-server -Djava.awt.headless=true \
 	-Xms768m -Xmx1560m -XX:+UseConcMarkSweepGC -XX:NewSize=48m"
