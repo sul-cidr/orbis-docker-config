@@ -43,6 +43,10 @@ services:
         done;
         /usr/local/tomcat/bin/catalina.sh run;
       "
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
 
   orbis_app:
     container_name: orbis_app
